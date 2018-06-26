@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		AC769A7C20E19C8900DF7484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A7B20E19C8900DF7484 /* AppDelegate.swift */; };
-		AC769A7E20E19C8900DF7484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A7D20E19C8900DF7484 /* ViewController.swift */; };
 		AC769A8120E19C8900DF7484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC769A7F20E19C8900DF7484 /* Main.storyboard */; };
 		AC769A8320E19C8B00DF7484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC769A8220E19C8B00DF7484 /* Assets.xcassets */; };
 		AC769A8620E19C8B00DF7484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC769A8420E19C8B00DF7484 /* LaunchScreen.storyboard */; };
+		AC769A9220E2267000DF7484 /* ImageDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A9120E2267000DF7484 /* ImageDownloadViewController.swift */; };
+		AC769A9520E22A4A00DF7484 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A9420E22A4A00DF7484 /* ImageDownloader.swift */; };
+		AC769A9920E22A8E00DF7484 /* UIViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A9720E22A8D00DF7484 /* UIViewController+HideKeyboard.swift */; };
+		AC769A9C20E22AF600DF7484 /* AlertMessageShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769A9B20E22AF600DF7484 /* AlertMessageShowing.swift */; };
+		AC769AA120E22B6000DF7484 /* ImageDownloadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769AA020E22B6000DF7484 /* ImageDownloadPresenter.swift */; };
+		AC769AA920E22CA200DF7484 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC769AA620E22CA200DF7484 /* TextConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC769A7820E19C8900DF7484 /* ImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC769A7B20E19C8900DF7484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC769A7D20E19C8900DF7484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC769A8020E19C8900DF7484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC769A8220E19C8B00DF7484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC769A8520E19C8B00DF7484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC769A8720E19C8B00DF7484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC769A9120E2267000DF7484 /* ImageDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadViewController.swift; sourceTree = "<group>"; };
+		AC769A9420E22A4A00DF7484 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		AC769A9720E22A8D00DF7484 /* UIViewController+HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
+		AC769A9B20E22AF600DF7484 /* AlertMessageShowing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessageShowing.swift; sourceTree = "<group>"; };
+		AC769AA020E22B6000DF7484 /* ImageDownloadPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadPresenter.swift; sourceTree = "<group>"; };
+		AC769AA620E22CA200DF7484 /* TextConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		AC769A6F20E19C8900DF7484 = {
 			isa = PBXGroup;
 			children = (
+				AC769A8D20E19CF100DF7484 /* Src */,
 				AC769A7A20E19C8900DF7484 /* ImageDownloader */,
 				AC769A7920E19C8900DF7484 /* Products */,
 			);
@@ -55,13 +66,89 @@
 			isa = PBXGroup;
 			children = (
 				AC769A7B20E19C8900DF7484 /* AppDelegate.swift */,
-				AC769A7D20E19C8900DF7484 /* ViewController.swift */,
-				AC769A7F20E19C8900DF7484 /* Main.storyboard */,
 				AC769A8220E19C8B00DF7484 /* Assets.xcassets */,
-				AC769A8420E19C8B00DF7484 /* LaunchScreen.storyboard */,
 				AC769A8720E19C8B00DF7484 /* Info.plist */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		AC769A8D20E19CF100DF7484 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A8420E19C8B00DF7484 /* LaunchScreen.storyboard */,
+				AC769A9E20E22B3500DF7484 /* ImageDownloadModule */,
+				AC769A9D20E22AF800DF7484 /* Protocols */,
+				AC769A9620E22A8D00DF7484 /* Extensions */,
+				AC769A9320E22A3B00DF7484 /* Services */,
+				AC769AA220E22CA200DF7484 /* Utilities */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		AC769A9020E2265500DF7484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A9120E2267000DF7484 /* ImageDownloadViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC769A9320E22A3B00DF7484 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A9420E22A4A00DF7484 /* ImageDownloader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AC769A9620E22A8D00DF7484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A9720E22A8D00DF7484 /* UIViewController+HideKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC769A9D20E22AF800DF7484 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A9B20E22AF600DF7484 /* AlertMessageShowing.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC769A9E20E22B3500DF7484 /* ImageDownloadModule */ = {
+			isa = PBXGroup;
+			children = (
+				AC769A7F20E19C8900DF7484 /* Main.storyboard */,
+				AC769A9020E2265500DF7484 /* View */,
+				AC769A9F20E22B4800DF7484 /* Presenter */,
+			);
+			path = ImageDownloadModule;
+			sourceTree = "<group>";
+		};
+		AC769A9F20E22B4800DF7484 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC769AA020E22B6000DF7484 /* ImageDownloadPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AC769AA220E22CA200DF7484 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC769AA320E22CA200DF7484 /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AC769AA320E22CA200DF7484 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AC769AA620E22CA200DF7484 /* TextConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC769A7E20E19C8900DF7484 /* ViewController.swift in Sources */,
+				AC769A9220E2267000DF7484 /* ImageDownloadViewController.swift in Sources */,
+				AC769A9C20E22AF600DF7484 /* AlertMessageShowing.swift in Sources */,
+				AC769A9920E22A8E00DF7484 /* UIViewController+HideKeyboard.swift in Sources */,
+				AC769AA920E22CA200DF7484 /* TextConstants.swift in Sources */,
+				AC769A9520E22A4A00DF7484 /* ImageDownloader.swift in Sources */,
+				AC769AA120E22B6000DF7484 /* ImageDownloadPresenter.swift in Sources */,
 				AC769A7C20E19C8900DF7484 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +373,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +392,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8QQ885R5K;
 				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

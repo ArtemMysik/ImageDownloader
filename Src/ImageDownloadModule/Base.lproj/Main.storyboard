@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Download View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ImageDownloadViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-mp-dH3">
+                                <rect key="frame" x="27" y="172.5" width="321.5" height="321.5"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AxP-mp-dH3" secondAttribute="height" multiplier="1:1" id="z2k-Q1-sSR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5PW-5y-fiW">
+                                <rect key="frame" x="27" y="116.5" width="321.5" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfm-zr-Lno">
+                                        <rect key="frame" x="0.0" y="0.0" width="241.5" height="40"/>
+                                        <color key="backgroundColor" red="0.87109375" green="0.87109375" blue="0.87109375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TZq-oJ-B12"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" keyboardAppearance="alert" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="url"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1b-PU-Amo">
+                                        <rect key="frame" x="249.5" y="0.0" width="72" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Download">
+                                            <color key="titleColor" red="1" green="0.83137254900000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchDownloadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cob-MH-2RV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DGn-yq-P8B">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.89803921568627454" green="0.77647058823529413" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20301851365181295" green="0.21549926808347197" blue="0.23425602791878175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DGn-yq-P8B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2KO-xh-js8"/>
+                            <constraint firstItem="DGn-yq-P8B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B9v-0x-GuI"/>
+                            <constraint firstItem="5PW-5y-fiW" firstAttribute="trailing" secondItem="AxP-mp-dH3" secondAttribute="trailing" id="C5s-i1-6GK"/>
+                            <constraint firstItem="AxP-mp-dH3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T1Q-tj-Rmz"/>
+                            <constraint firstItem="AxP-mp-dH3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="6:7" id="VET-0u-erD"/>
+                            <constraint firstItem="AxP-mp-dH3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z3h-vZ-YmL"/>
+                            <constraint firstItem="AxP-mp-dH3" firstAttribute="top" secondItem="5PW-5y-fiW" secondAttribute="bottom" constant="16" id="c0f-Re-U2y"/>
+                            <constraint firstItem="5PW-5y-fiW" firstAttribute="leading" secondItem="AxP-mp-dH3" secondAttribute="leading" id="jwJ-XW-0G0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="DGn-yq-P8B" id="NHA-7x-OCf"/>
+                        <outlet property="imageView" destination="AxP-mp-dH3" id="tle-jm-JXF"/>
+                        <outlet property="textField" destination="Cfm-zr-Lno" id="2KW-bd-Xhu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
